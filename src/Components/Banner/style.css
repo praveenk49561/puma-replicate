@@ -1,0 +1,140 @@
+.banner-main-container {
+    display: flex;
+    /* justify-content: flex-end; */
+    height: min-content;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-background {
+    width: 100%;
+    height: auto;
+}
+.banner-sub-container {
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 78%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-heading-container{
+    width: 100%;
+    font-family: DIN-BOLD;
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.banner-description-container {
+    width: 100%;
+    font-family: DIN-BOLD;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.banner-sub-heading-container {
+    width: 100%;
+    font-family: DIN-REGULAR;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.banner-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+
+.banner-heading, .banner-description, .banner-sub-heading, .banner-btns {
+    align-self: center;
+}
+
+.heading-contrast {
+    color: white;
+}
+
+.align-right {
+    top: 50%;
+    left: 78%;
+} 
+
+.align-left {
+    top: 50%;
+    left: 24%;
+}
+
+.align-center {
+    top: 50%;
+    left: 50%;
+}
+
+.align-self-right {
+    align-self: flex-end;
+} 
+
+.align-self-left {
+    align-self: flex-start;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .banner-sub-container {
+        width: 95%;
+        left: 50%;
+    }
+
+    .mobile-force {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .banner-sub-container {
+        position: static;
+        transform: none;
+        font-size: 1.8rem;
+    }
+
+    .mobile-force > .banner-heading {
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .mobile-force > .banner-sub-heading {
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    .mobile-force > .banner-description {
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    .mobile-force > .banner-btns {
+        color: white;
+        background-color: black;
+        font-size: 0.8rem;
+    }
+}

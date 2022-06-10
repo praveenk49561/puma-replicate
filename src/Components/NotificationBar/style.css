@@ -1,0 +1,21 @@
+.notification-bar-main-container {
+    padding: 13px;
+    background-color: #ae946d;
+    display: flex;
+    font-family: DIN-REGULAR;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+}
+
+.notification-bar-content {
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .notification-bar-main-container {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+}

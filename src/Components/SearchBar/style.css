@@ -1,0 +1,31 @@
+.search-bar-container {
+    /* padding: .625rem 2.625rem .75rem 2.8125rem;
+    width: inherit; */
+    position: relative;
+}
+
+.search-bar-field > input {
+    background-color: inherit;
+    font-family: DIN-MEDIUM;
+    color: white;
+    border: none;
+    outline: none;
+    padding: .625rem 2.625rem .75rem 2.8125rem;
+    width: 8.125rem;
+    border: 1px solid #ffffff1a;
+    text-overflow: ellipsis;
+}
+
+.search-bar-icon {
+    color: #ffffff;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-size: large;
+}
+
+@media only screen and (max-width: 1200px) {
+    .search-bar-container {
+        display: none;
+    }
+}
